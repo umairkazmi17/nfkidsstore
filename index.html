@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NFKIDS STORE - Online Kids Shop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== Base ===== */
+body{
+margin:0;
+font-family:Poppins;
+background:#f8fafc;
+color:#1f2937;
+}
+
+h1,h2,h3{
+margin:0;
+}
+
+section{
+padding:70px 8%;
+}
+
+/* ===== Navbar ===== */
+nav{
+background:#ff4d6d;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* ===== Hero ===== */
+.hero{
+background:linear-gradient(to right,#ff4d6d,#ff9f43);
+color:white;
+padding:120px 8%;
+text-align:center;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero p{
+margin:20px 0;
+font-size:1.1rem;
+}
+
+.btn{
+background:white;
+color:#ff4d6d;
+padding:12px 28px;
+border-radius:30px;
+border:none;
+font-weight:600;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#fff0f3;
+}
+
+/* ===== Products ===== */
+.products{
+background:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+box-shadow:0 4px 12px #0001;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+text-align:center;
+padding:15px;
+}
+
+/* ===== Order ===== */
+.order{
+background:#ecfdf5;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input,select{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:1rem;
+}
+
+/* ===== Payment ===== */
+.payment{
+background:white;
+text-align:center;
+}
+
+.paybox{
+max-width:500px;
+margin:auto;
+background:#f1f5f9;
+padding:25px;
+border-radius:15px;
+}
+
+/* ===== Delivery ===== */
+.delivery{
+background:#fff7ed;
+text-align:center;
+}
+
+/* ===== Footer ===== */
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* ===== WhatsApp ===== */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:14px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 4px 12px #0003;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/923076888678" target="_blank">
+WhatsApp Order
+</a>
+
+<!-- Navbar -->
+<nav>
+
+<h2>NFKIDS STORE</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#order">Order</a></li>
+<li><a href="#payment">Payment</a></li>
+<li><a href="#delivery">Delivery</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+
+<h1>Best Kids Shopping Store</h1>
+
+<p>Clothes • Toys • Shoes • Bags • Accessories</p>
+
+<button class="btn" onclick="location.href='#products'">
+Shop Now
+</button>
+
+</div>
+
+<!-- Products -->
+<section id="products" class="products">
+
+<h2>Our Products</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+<h3>Kids T-Shirts</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618354691438-25bc04584c23">
+<h3>Kids Toys</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596464716121-ff8dbb1a0e45">
+<h3>School Bags</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
+<h3>Kids Shoes</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108">
+<h3>Winter Jackets</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9">
+<h3>Caps & Hats</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- Order -->
+<section id="order" class="order">
+
+<h2>Place Your Order</h2>
+
+<form>
+
+<input placeholder="Full Name" required>
+<input placeholder="Phone Number" required>
+<input placeholder="City" required>
+<input placeholder="Complete Address" required>
+<input placeholder="Product Name" required>
+
+<select>
+<option>Cash on Delivery</option>
+<option>EasyPaisa</option>
+<option>Meezan Bank</option>
+</select>
+
+<button class="btn">Confirm Order</button>
+
+</form>
+
+</section>
+
+<!-- Payment -->
+<section id="payment" class="payment">
+
+<h2>Payment Details</h2>
+
+<div class="paybox">
+
+<p><b>EasyPaisa:</b> 03177000960</p>
+
+<p><b>Meezan Bank</b></p>
+
+<p>Name: Syed Umar Farooq</p>
+<p>Account: 04190103181151</p>
+
+</div>
+
+</section>
+
+<!-- Delivery -->
+<section id="delivery" class="delivery">
+
+<h2>Delivery Charges</h2>
+
+<p>Karachi: Rs.150 | Lahore: Rs.180 | Other Cities: Rs.250</p>
+
+<p>Delivery Time: 2–5 Working Days</p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<p>© 2026 NFKIDS STORE | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
